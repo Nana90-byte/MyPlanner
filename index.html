@@ -14,6 +14,10 @@
 </head>
 
 <body>
+  <script src="lb/moment.min.js"></script>
+  <script>
+ 
+  </script>
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -21,20 +25,92 @@
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
-    <div class="row">
-      <table class="table table-bordered">
+    <div class="time-block">
+        <div class="row">
+          <span class="hour">9:00</span>
+          <textarea id="textarea" class="description"></textarea>
+          <button class="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </div>
+      </div>
+      <div class="time-block">
+          <div class="row">
+            <span class="hour">10:00am</span>
+            <textarea id="textarea" class="description"></textarea>
+            <button class="saveBtn">
+              <i class="fa fa-save"></i>
+            </button>
+          </div>
+        </div>
+        <div class="time-block">
+            <div class="row">
+              <span class="hour">9AM</span>
+              <textarea id="textarea" class="description"></textarea>
+              <button class="saveBtn">
+                <i class="fa fa-save"></i>
+              </button>
+            </div>
+          </div>
+          <div class="time-block">
+              <div class="row">
+                <span class="hour">9AM</span>
+                <textarea id="textarea" class="description"></textarea>
+                <button class="saveBtn">
+                  <i class="fa fa-save"></i>
+                </button>
+              </div>
+            </div>
+            <div class="time-block">
+                <div class="row">
+                  <span class="hour">9AM</span>
+                  <textarea id="textarea" class="description"></textarea>
+                  <button class="saveBtn">
+                    <i class="fa fa-save"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="time-block">
+                  <div class="row">
+                    <span class="hour">9AM</span>
+                    <textarea id="textarea" class="description"></textarea>
+                    <button class="saveBtn">
+                      <i class="fa fa-save"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="time-block">
+                    <div class="row">
+                      <span class="hour">9AM</span>
+                      <textarea id="textarea" class="description"></textarea>
+                      <button class="saveBtn">
+                        <i class="fa fa-save"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="time-block">
+                      <div class="row">
+                        <span class="hour">9AM</span>
+                        <textarea id="textarea" class="description"></textarea>
+                        <button class="saveBtn">
+                          <i class="fa fa-save"></i>
+                        </button>
+                      </div>
+                    </div>
+      <!-- <table class="table table-bordered"> -->
 
-        <tbody>
+        <!-- <tbody>
           <div class="row">
             <tr>
               <div calss="col-md-2">
-                <th>9:00am</th>
+                <th class="time">9:00am</th>
               </div>
               <td colspan="2" class="col-md-6">
-                <input type="text" class="form-control" class="holder" placeholder="Type your Plan">
-              </td>
+                <textarea rows="3"cols="107" class="form-control holder" id="txt1" placeholder="Type your plan"></textarea>
+                <!-- <input type="text" class="form-control holder" id="txt1" placeholder="Type your Plan"> -->
+              <!-- </td>
               <td class="col-md-2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+                <button class="btn btn-outline-secondary button"  type="button" id="button-addon2 btn1">Submit</button>
               </td>
             </tr>
           </div>
@@ -43,13 +119,13 @@
           <div class="row">
             <tr>
               <div class="col-md-2">
-                <th>10:00am</th>
+                <th class="time">10:00am</th>
               </div>
               <td colspan="2" class="col-md-6">
-                <input type="text" class="form-control" class="holder" placeholder="Type your Plan">
+                <input type="text" class="form-control holder" id="txt2" placeholder="Type your Plan">
               </td>
               <td class="col-md-2">
-                <button class="btn btn-outline-secondary" class="button" type="button" id="button-addon2">Submit</button>
+                <button class="btn btn-outline-secondary button" type="button" id="button-addon2 btn2">Submit</button>
               </td>
             </tr>
           </div>
@@ -58,13 +134,13 @@
           <div class="row">
             <tr>
               <div class="col-md-2">
-                <th>10:00am</th>
+                <th class="time">11:00am</th>
               </div>
               <td colspan="2" class="col-md-6">
-                <input type="text" class="form-control" class="holder" placeholder="Type your Plan">
+                <input type="text" class="form-control holder" id="txt3" placeholder="Type your Plan">
               </td>
               <td class="col-md-2">
-                <button class="btn btn-outline-secondary" class="button" type="button" id="button-addon2">Submit</button>
+                <button class="btn btn-outline-secondary button" type="button" id="button-addon2 btn3">Submit</button>
               </td>
             </tr>
           </div>
@@ -72,13 +148,13 @@
           <div class="row">
             <tr>
               <div class="col-md-2">
-                <th>10:00am</th>
+                <th class="time">12:00pm</th>
               </div>
               <td colspan="2" class="col-md-6">
-                <input type="text" class="form-control" class="holder" placeholder="Type your Plan">
+                <input type="text" class="form-control holder" id="txt4" placeholder="Type your Plan">
               </td>
               <td class="col-md-2">
-                <button class="btn btn-outline-secondary" class="button" type="button" id="button-addon2">Submit</button>
+                <button class="btn btn-outline-secondary button" type="button" id="button-addon2 btn4">Submit</button>
               </td>
             </tr>
           </div>
@@ -86,26 +162,26 @@
           <div class="row">
             <tr>
               <div class="col-md-2">
-                <th>10:00am</th>
+                <th class="time">1:00pm</th>
               </div>
               <td colspan="2" class="col-md-6">
-                <input type="text" class="form-control" class="holder" placeholder="Type your Plan">
+                <input type="text" class="form-control holder" id="text5" placeholder="Type your Plan">
               </td>
               <td class="col-md-2">
-                <button class="btn btn-outline-secondary" class="button" type="button" id="button-addon2">Submit</button>
+                <button class="btn btn-outline-secondary button" type="button" id="button-addon2 btn5">Submit</button>
               </td>
             </tr>
           </div>
           <div class="row">
             <tr>
               <div class="col-md-2">
-                <th>10:00am</th>
+                <th class="time">2:00pm</th>
               </div>
               <td colspan="2" class="col-md-6">
-                <input type="text" class="form-control" class="holder" placeholder="Type your Plan">
+                <input type="text" class="form-control holder" id="text6" placeholder="Type your Plan">
               </td>
               <td class="col-md-2">
-                <button class="btn btn-outline-secondary" class="button" type="button" id="button-addon2">Submit</button>
+                <button class="btn btn-outline-secondary button" type="button" id="button-addon2 btn6">Submit</button>
               </td>
             </tr>
           </div>
@@ -113,13 +189,13 @@
           <div class="row">
             <tr>
               <div class="col-md-2">
-                <th>10:00am</th>
+                <th class="time">3:00pm</th>
               </div>
               <td colspan="2" class="col-md-6">
-                <input type="text" class="form-control" class="holder" placeholder="Type your Plan">
+                <input type="text" class="form-control holder" placeholder="Type your Plan">
               </td>
               <td class="col-md-2">
-                <button class="btn btn-outline-secondary" type="button" class="button" id="button-addon2">Submit</button>
+                <button class="btn btn-outline-secondary button" class="button" id="button-addon2">Submit</button>
               </td>
             </tr>
           </div>
@@ -127,13 +203,13 @@
           <div class="row">
             <tr>
               <div class="col-md-2">
-                <th>10:00am</th>
+                <th class="time">4:00pm</th>
               </div>
               <td colspan="2" class="col-md-6">
-                <input type="text" class="form-control" class="holder" placeholder="Type your Plan">
+                <input type="text" class="form-control holder" placeholder="Type your Plan">
               </td>
               <td class="col-md-2">
-                <button class="btn btn-outline-secondary" class="button" type="button" id="button-addon2">Submit</button>
+                <button class="btn btn-outline-secondary button" type="button" id="button-addon2">Submit</button>
               </td>
             </tr>
           </div>
@@ -141,22 +217,24 @@
           <div class="row">
             <tr>
               <div class="col-md-2">
-                <th>10:00am</th>
+                <th class="time">5:00pm</th>
               </div>
               <td colspan="2" class="col-md-6">
-                <input type="text" class="form-control" class="holder" placeholder="Type your Plan">
+                <input type="text-" class="form-control holder" placeholder="Type your Plan">
               </td>
               <td class="col-md-2">
-                <button class="btn btn-outline-secondary" class="button" type="button" id="button-addon2">Submit</button>
+                <button class="btn btn-outline-secondary button" type="button" id="button-addon2">Submit</button>
               </td>
             </tr>
           </div>
 
-        </tbody>
+        </tbody> --> 
       </table>
     </div>
   </div>
-  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
-</html> -->
+</html> 
