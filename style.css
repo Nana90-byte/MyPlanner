@@ -44,7 +44,7 @@ textarea{
   border-top: 1px dashed #000000;
 }
 
-.past {
+/* .past {
   background-color: #d3d3d3;
   color: white;
 }
@@ -57,7 +57,7 @@ textarea{
 .future {
   background-color: #77dd77;
   color: white;
-}
+} */
 
 .saveBtn {
   border-left: 1px solid black;
@@ -72,3 +72,19 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
+/* 
+@media screen and (max-width:640px) {
+  .saveBtn {
+    position
+  }
+}
+  
+@media screen and (min-width: 641px) and (max-width:768px) {
+  .background {
+    max-width: 100%;
+
+    
+  }
+  .bigBox {
+      position: static; width: 100%; text-align: center
+  } */
