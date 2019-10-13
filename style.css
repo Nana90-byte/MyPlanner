@@ -72,14 +72,26 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-/* 
+ 
 @media screen and (max-width:640px) {
   .saveBtn {
-    position
+    border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   }
+  .row {
+    white-space: pre-wrap;
+    height: 130px;
+    border-top: 1px solid white;;
+  }
+  .fa-save {
+    margin-right: 50px;
+    /* visibility: hidden; */
+  }
+  
+
 }
   
-@media screen and (min-width: 641px) and (max-width:768px) {
+/* @media screen and (min-width: 641px) and (max-width:768px) {
   .background {
     max-width: 100%;
 
@@ -87,4 +99,4 @@ textarea{
   }
   .bigBox {
       position: static; width: 100%; text-align: center
-  } */
+  } */ 
